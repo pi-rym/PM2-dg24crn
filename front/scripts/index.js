@@ -1,9 +1,8 @@
 let moviesContainer = document.getElementById("movies-background")
 
-$.get("https://students-api.up.railway.app/movies", function(movieData) {
+$.get("https://students-api.up.railway.app/movies", (movieData) => {
 
-
-    movieData.forEach(movie => {
+        movieData.forEach(movie => {
 
         let card = document.createElement("div")
         card.classList.add("movie-card")
