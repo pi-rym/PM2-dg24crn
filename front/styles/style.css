@@ -52,3 +52,24 @@ body {
 #header-nav-container a:hover {
     color: red;
 }
+
+#pageTitle-container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#pageTitle {
+    color: black;
+    font-size: 75px;
+    font-family: Bebas Neue;
+}
+
+#mainBox-container {
+    border: 1px solid white;
+    width: auto;
+    height: auto;
+    color: white;
+}
