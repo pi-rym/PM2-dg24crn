@@ -81,3 +81,34 @@ body {
 .movie img {
     width: 250px;
 }
+
+#movieTitleText {
+    font-family: bebas neue;
+    font-size: 20px;
+}
+
+#historia-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#historia-text {
+    color: white;
+    font-family: bebas neue;
+    font-size: 30px;
+}
+
+#acercaDe-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#acercaDe-text {
+    color: white;
+    font-family: bebas neue;
+    font-size: 30px;
+}
