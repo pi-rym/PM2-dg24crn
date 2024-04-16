@@ -1,6 +1,13 @@
-const renderFilms = require('./renderFilms')
+const renderFilms = require('./renderFilms');
+const axios = require('axios');
 
-$.get('https://students-api.up.railway.app/movies', (data) => data.map(renderFilms)).fail(() => alert('Error al traer las peliculas'))
-
-
-
+axios.get('https://students-api.up.railway.app/movies')
+  .then(response => {
+    const movies = response.data
+    movies.forEach(movie => {
+      renderFilms(movie)
+    });
+  })
+  .catch(error => {
+    console.error('Error al obtener las películas:', error);
+  });
