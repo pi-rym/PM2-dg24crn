@@ -1,5 +1,11 @@
 const app = require('./src/app')
 
+const dbCon = require("./src/config/dbCon")
+
 const PORT = 3000
 
-app.listen(PORT, () => console.log(`Server Started on Port: ${PORT}`))
+dbCon().then(
+    res=> app.listen(PORT, () => console.log(`Server Started on Port: ${PORT}`))
+)
+
+
