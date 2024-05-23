@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
-  <title>Proyecto Modulo 02 | Inicio</title>
+  <title>Proyecto Modulo 02 | Agregar Pelicula</title>
 </head>
 <body>
 <header id="header-container">
@@ -27,13 +27,31 @@
 <main>
   <div id="pageTitle-container">
       <div id="pageTitle">
-        <span>Cartelera</span>
+        <span>Agregar Pelicula</span>
       </div>
   </div>
-  <section id="films">
-      
-  </section>
+  <div id="formContainer">
+    <h1>Completa el siguiente formulario para agregar una pelicula:</h1>
+    <form id="moviesForm">
+        <input id="titleInput" placeholder="TITULO" type="text">
+        <br><br>
+        <input id="yearInput" placeholder="AÑO" type="text">
+        <br><br>
+        <input id="directorInput" placeholder="DIRECTOR" type="text">
+        <br><br>
+        <input id="durationInput" placeholder="DURACION (minutos)" type="text">
+        <br><br>
+        <input id="genreInput" placeholder="GENERO" type="text">
+        <br><br>
+        <input id="ratingInput" placeholder="RATING" type="text">
+        <br><br>
+        <input id="posterInput" placeholder="POSTER URL" type="url">
+        <br><br>
+        <button type="submit" id="addMovieButton">Agregar Pelicula</button>
+    </form>
+  </div>
 </main>
+<script src="scripts/index.js"></script>
 <script src="./scripts/renderFilms.js"></script>
 <script src="./public/bundle.js"></script>
 </body>

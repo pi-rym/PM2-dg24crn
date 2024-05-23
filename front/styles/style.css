@@ -112,3 +112,16 @@ body {
     font-family: bebas neue;
     font-size: 30px;
 }
+
+#formContainer h1 {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: bebas neue;
+    font-size: 40px;
+}
+
+#formContainer {
+    text-align: center;
+}
